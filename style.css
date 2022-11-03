@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background: rgb(149, 231, 246);
+  height: 100vh;
+  
+}
+
+.title {
+  color: #111;
+  text-align: center;
+  font-size: 36px;
+  margin: 10px 30px;
+  /* font-style: italic; */
+}
+
+h4 {
+  color: #111;
+  text-align: center;
+  font-size: 20px;
+  /* margin: 45px; */
+  font-style: italic;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
+}
+
+.slide {
+  height: 80vh;
+  border-radius: 10px;
+  margin: 10px;
+  /* cursor: pointer; */
+  color: #fff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  transition: all 500ms ease-in-out;
+}
+
+.point {
+  cursor: pointer;
+}
+
+.slide p {
+  position: absolute;
+  font-size: 20px;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+  
+}
+
+.slide.active {
+  flex: 10;
+}
+
+.slide.active p {
+  opacity: 1;
+  transition: opacity 500ms ease-in 0.3s;
+}
+
+.mark {
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity ease-in-out 200ms;
+}
+
+.link:hover {
+  opacity: .7; 
+}
